@@ -10,6 +10,8 @@ Usando git.
 4. git remote add origin url
 5. git push -u origin master
 
+-----------------
+
 Use `git add *` to add all files in a directory.
 
 You also need to make sure you run `git commit -m "your commit message"` before you push
