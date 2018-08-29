@@ -6,9 +6,9 @@ Usando git.
 
 1. git init
 2. git add *
-3. git remote add origin url
-4. git commit -m 'comentario'
-5. git push origin master
+3. git commit -m 'comentario'
+4. git remote add origin url
+5. git push -u origin master
 
 Use `git add *` to add all files in a directory.
 
