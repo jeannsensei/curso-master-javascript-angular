@@ -15,3 +15,7 @@ Usando git.
 Use `git add *` to add all files in a directory.
 
 You also need to make sure you run `git commit -m "your commit message"` before you push
+
+------
+
+Video Youtube pequeño tuto: https://www.youtube.com/watch?v=RRegIKu-z3k
