@@ -1,0 +1,85 @@
+ng new spa
+
+para crear un nueva app single page app
+
+ng g c components/shared/navbar
+
+para crear los componentes header, footer, etc.
+
+npm install bootstrap --save
+
+npm install jquery --save
+
+npm install popper.js --save
+
+
+hay que agregarlos al angular.json 
+
+
+                        "styles": [
+                            "src/styles.css",
+                            "node_modules/bootstrap/dist/css/bootstrap.min.css"
+                        ],
+                        "scripts": [
+                            "node_modules/jquery/dist/jquery.slim.min.js",
+                            "node_modules/popper.js/dist/umd/popper.min.js",
+                            "node_modules/bootstrap/dist/js/bootstrap.min.js"
+                        ]
+
+------
+
+en el archivo 02-spa\src\app\app.routes.ts
+
+import { RouterModule, Routes } from '@angular/router';
+
+const APP_ROUTES: Routes = [
+    { path: 'routePath', component: Component },
+    { path: '**', pathMatch: 'full', redirectTo: ''}
+];
+
+export const app_routing = RouterModule.forRoot(APP_ROUTES);
+
+------
+
+servicio para busqueda, hacer carpeta servicios y dentro: nombre.service.ts
+
+import { Injectable } from '@angular/core';
+
+@Injectable()
+export class HeroesService {
+
+    constructor() {
+
+        console.log('servicio listo para usarse');
+    }
+}
+
+
+y agregarlo al app.module.ts 
+
+// Servicios
+import { NombreService } from './servicios/nombre.service';
+
+  providers: [
+    NombreService
+  ],
+
+-----------------------
+
+después en el nombre.component.ts se agrega el servicio, se importa y en el constructor se agrega, por ejemplo:
+
+import { Component, OnInit } from '@angular/core';
+import { HeroesService } from '../../servicios/heroes.service';
+
+@Component({
+  selector: 'app-heroes',
+  templateUrl: './heroes.component.html'
+})
+export class HeroesComponent implements OnInit {
+
+  constructor(private _heroesService: HeroesService ) { }
+
+  ngOnInit() {
+  }
+
+}

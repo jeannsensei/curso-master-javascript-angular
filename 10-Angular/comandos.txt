@@ -1,0 +1,25 @@
+Para desinstalar Angular
+npm uninstall -g @angular/cli
+
+Para limpiar la cache
+npm cache verify 
+
+Para borrar la cache 
+npm cache clear --force
+
+Instalar Angular
+
+npm install  -g @angular/cli
+-----
+
+Generar componentes
+
+ng generate component 'nombre'
+
+--
+
+Parar servidor local
+Ctrl + C
+
+Iniciarlo de nuevo
+ng serve

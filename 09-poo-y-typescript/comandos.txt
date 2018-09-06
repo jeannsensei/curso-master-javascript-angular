@@ -1,0 +1,17 @@
+Para empezar a compilar de .ts a .js hay que usar
+
+tsc -init
+
+para que cree un archivo tsconfig.json, ya con ese archivo
+
+tsc -w 
+
+y va a analizar todo lo que sea .ts y pasarlo a .js
+
+
+
+ENLACES DE AYUDA
+
+https://www.michaelcrump.net/quick-tip-with-typescript-and-vscode/
+https://es.stackoverflow.com/questions/34023/error-ts6053-file-ts-not-found
+https://www.typescriptlang.org/index.html
