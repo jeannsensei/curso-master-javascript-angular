@@ -1,0 +1,30 @@
+node -v
+ver version de node.js
+----
+node nombredearchivo.js
+lo ejecuta y muestra por consola
+-----
+pasando parametros por consola -> node calculadora.js 1 2 3
+-----------
+instalar dependencias
+
+primero
+npm init para el package.json
+
+segundo
+npm install express --save
+
+tercero
+npm install body-parser --save
+
+cuarto
+npm install connect-multiparty --save
+
+quinto
+npm install mongoose --save
+
+sexto
+npm install nodemon --save-dev
+------------------
+
+npm start
